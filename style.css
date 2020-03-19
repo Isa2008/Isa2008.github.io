@@ -31,7 +31,7 @@ a:hover, a:focus {
 
 li {
     list-style: none;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 h1 {
@@ -63,7 +63,7 @@ span {
 }
 
 #my-projects-intro {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 #my-projects {
