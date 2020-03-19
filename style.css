@@ -107,7 +107,7 @@ span {
 #container-social-icons a {
     border-bottom: 0px;
     font-size: 30px;
-    padding-left: 1vw;
+    padding-left: 2vw;
     top: 9px;
     position: relative;
 }
@@ -115,6 +115,7 @@ span {
 @media screen and (max-width: 750px) {
     #my-tools {
         margin-bottom: 20px;
+        flex-direction: column;
     }
     .tools {
         padding-bottom: 6vw;
