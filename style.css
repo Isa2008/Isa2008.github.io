@@ -68,7 +68,7 @@ span {
     margin-bottom: 70px;
 }
 
-#my-projects {
+.my-projects {
     margin-bottom: 60px;
     display: flex;
     flex-wrap: wrap;
