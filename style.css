@@ -61,7 +61,7 @@ span {
 }
 
 .container-portfolio {
-    padding: 2vw 10vw;
+    padding: 3vw 10vw;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -96,6 +96,7 @@ span {
 
 .my-projects-intro {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 6px;
 }
@@ -129,7 +130,6 @@ span {
     }
     li {
         margin: 30px 0 0;
-        width: 320px;
     }
     span {
         font-size: 1em;
