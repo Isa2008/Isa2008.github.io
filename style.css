@@ -8,8 +8,8 @@
 body {
     margin: 0;
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: hsl(0, 0%, 0%);
-    background: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 13%);
+    background: hsl(0, 0%, 93%);
 }
 
 html {
@@ -18,18 +18,22 @@ html {
 
 a {
     text-decoration: none;
-    color: hsl(0, 0%, 0%);
-    border-bottom: solid 2px hsl(0, 0%, 0%);
+    color: hsl(238, 100%, 50%);
+    border-bottom: solid 2px hsl(238, 100%, 50%);
 }
 
-a:hover, a:focus {
-    color: hsl(171.5, 100%, 42.9%);
-    border-bottom: 0px;
+a:hover, a:focus, a:active {
+    color: hsl(0, 0%, 13%);
+    border-bottom-color: hsl(0, 0%, 13%);
+}
+
+ul {
+    padding: 0;
 }
 
 li {
     list-style: none;
-    margin: 30px;
+    margin: 20px 30px 0 30px;
     width: 320px;
 }
 
@@ -58,36 +62,30 @@ span {
 
 .container-portfolio {
     padding: 2vw 10vw;
-}
-
-#hello {
-    margin: 2vw 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 #my-intro {
-    margin-bottom: 70px;
+    width: 50vw;
 }
 
-.my-projects {
-    margin-bottom: 60px;
-    display: flex;
-    flex-wrap: wrap;
+.my-intro-paragraph {
+    margin-bottom: 10px;
 }
 
-#my-tech {
-    margin-bottom: 35px;
+.my-tools-paragraph {
+    margin-bottom: 30px;
 }
 
 #my-tools {
-    margin-bottom: 40px;
     display: flex;
-    flex-direction: row;
     flex-flow: wrap;
+    gap: 22px;
 }
 
 .tools {
-    padding-right: 3vw;
-    padding-bottom: 4vw;
     text-align: center;
 }
 
@@ -96,46 +94,51 @@ span {
     height: 40px;
 }
 
-#my-life {
-    margin-bottom: 30px;
+.my-projects-intro {
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
-#my-contact {
-    margin-bottom: 30px;
+.my-projects-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#email {
-    margin-bottom: 20px;
+.my-projects-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
 }
 
 #container-social-icons a {
-    border-bottom: 0px;
-    font-size: 35px;
-    padding: 10px;
-    top: 9px;
     position: relative;
+    top: 9px;
+    font-size: 35px;
+    border-bottom: 0px;
+    padding-left: 8px;
 }
 
-@media screen and (max-width: 950px) {
-    .tools {
-        padding-right: 5vw;
-        padding-bottom: 6vw;
-    }
-}
-
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 1000px) {
     h1 {
         font-size: 3.4em;
     }
+    ul {
+        padding: 0
+    }
     li {
-        width: 100%;
-        margin: 30px 0;
+        margin: 30px 0 0;
+        width: 320px;
     }
     span {
         font-size: 1em;
         margin: 0;
     }
-    #my-tools {
-        justify-content: center;
+    #my-intro {
+        width: 80vw;
+    }
+    .my-projects-list-item {
+        align-items: start;
     }
 }
